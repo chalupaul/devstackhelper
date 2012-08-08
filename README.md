@@ -18,9 +18,11 @@ only to forget where things are and screw you up later (I'm a lazy dev).
 By exporting some variables in your .bash_profile, you can switch branches and forks to
 any project on devstack.
 
-`export GIT_NAME=chalupaul 
-# This would change the name of the github repo owner like https://github.com/chalupaul/nova
-export GIT_BASE=https://my.private.git.repo # If you're a closed source tool`
+This would change the name of the github repo owner from openstack to chalupaul
+`export GIT_NAME=chalupaul `
+
+This would change https://github.com to https:/my.private.git.repo
+`export GIT_BASE=https://my.private.git.repo `
 
 
 Some more practical examples:
