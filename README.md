@@ -30,7 +30,6 @@ This would change https://github.com to https:/my.private.git.repo
 Some more practical examples:
 
 `export CINDER_REPO=http://github.com/chalupaul/nova
-
 export CINDER_BRANCH=my_feature_branch`
 
 I is ams installings?!
