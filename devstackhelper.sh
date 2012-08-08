@@ -1,4 +1,9 @@
 #!/bin/bash
+if [ `whoami` != "root" ]
+then 
+    echo You must be root to run this.
+    exit 1
+fi
 GIT_NAME=${GIT_NAME:-openstack}
 GIT_BASE=${GIT_BASE:-https://github.com}
 screen apt-get update
