@@ -19,9 +19,11 @@ By exporting some variables in your .bash_profile, you can switch branches and f
 any project on devstack.
 
 This would change the name of the github repo owner from openstack to chalupaul
+
 `export GIT_NAME=chalupaul `
 
 This would change https://github.com to https:/my.private.git.repo
+
 `export GIT_BASE=https://my.private.git.repo `
 
 
@@ -35,4 +37,4 @@ I is ams installings?!
 
 Pop yourself a brand new instance in some cloud and run this:
 
-`bash <(curl -fsSk https://<i'll make a link after i upload this readme...>)`
+`bash <(curl -fsSk https://raw.github.com/chalupaul/devstackhelper/master/devstackhelper.sh)`
