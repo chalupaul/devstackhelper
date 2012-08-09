@@ -4,9 +4,7 @@ then
     echo You must be root to run this.
     exit 1
 fi
-GIT_NAME=${GIT_NAME:-openstack}
-GIT_BASE=${GIT_BASE:-https://github.com}
-GIT_PATH="${GIT_BASE}/${GIT_NAME}"
+GIT_PATH="${GIT_BASE:-https://github.com}/${GIT_NAME:-openstack}"
 screen apt-get update
 screen apt-get -qy install git emacs23-nox
 git clone https://github.com/openstack-dev/devstack
