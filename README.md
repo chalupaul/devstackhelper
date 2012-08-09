@@ -87,8 +87,6 @@ new variable in devstack.
 I is ams installings?!
 ======================
 
-First, you need [screen](http://www.gnu.org/software/screen/ "screen") installed.
-
 Next, pop yourself a brand new instance in some cloud and run this:
 
     bash <(curl -fsSk https://raw.github.com/chalupaul/devstackhelper/master/devstackhelper.sh)
