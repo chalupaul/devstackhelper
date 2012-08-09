@@ -1,7 +1,5 @@
 #!/bin/bash
-GIT_NAME=${GIT_NAME:-openstack}
-GIT_BASE=${GIT_BASE:-https://github.com}
-GIT_PATH="${GIT_BASE}/${GIT_NAME}"
+GIT_PATH="${GIT_BASE:-https://github.com}/${GIT_NAME:-openstack}"
 
 function genlocalrc() {
     local LOCALRC="${1:-localrc}"
