@@ -6,7 +6,11 @@ then
     exit 1
 fi
 
-source genlocalrc.sh
+if [ -f ${GENLOCALRC:-genlocalrc.sh} ]; then
+    source $GENLOCALRC
+else
+    bash <(curl -fsSk https://raw.github.com/chalupaul/devstackhelper/master/genlocalrc.sh)
+fi
 
 export DEBIAN_FRONTEND=noninteractive
 apt-get update
