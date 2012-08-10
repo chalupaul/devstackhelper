@@ -8,9 +8,9 @@ fi
 
 GENLOCALRC=${GENLOCALRC:-genlocalrc.sh}
 if [ ! -f ${GENLOCALRC} ]; then
-    curl -o $GENLOCALRC https://raw.github.com/chalupaul/devstackhelper/master/genlocalrc.sh
+    curl -o devstack/${GENLOCALRC} https://raw.github.com/chalupaul/devstackhelper/master/genlocalrc.sh
 fi
-source $GENLOCALRC
+source devstack/${GENLOCALRR}
 
 export DEBIAN_FRONTEND=noninteractive
 apt-get update
