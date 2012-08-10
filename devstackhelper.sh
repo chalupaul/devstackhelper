@@ -10,6 +10,7 @@ if [ -f ${GENLOCALRC:-genlocalrc.sh} ]; then
     source $GENLOCALRC
 else
     bash <(curl -fsSk https://raw.github.com/chalupaul/devstackhelper/master/genlocalrc.sh)
+    echo $MYSQL_PASSWORD
 fi
 
 export DEBIAN_FRONTEND=noninteractive
