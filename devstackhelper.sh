@@ -6,16 +6,23 @@ then
     exit 1
 fi
 
+export DEBIAN_FRONTEND=noninteractive
+apt-get update
+apt-get -qy install git emacs23-nox
+
+git clone https://github.com/openstack-dev/devstack
+cd devstack
+
 GENLOCALRC=${GENLOCALRC:-genlocalrc.sh}
-if [ ! -f ${GENLOCALRC} ]; then
-    curl -o devstack/${GENLOCALRC} https://raw.github.com/chalupaul/devstackhelper/master/genlocalrc.sh
+if [ ! -f $GENLOCALRC ]; then
+    curl -o $GENLOCALRC https://raw.github.com/chalupaul/devstackhelper/master/genlocalrc.sh
 fi
-source devstack/${GENLOCALRR}
+source $GENLOCALRC
 
 export DEBIAN_FRONTEND=noninteractive
 apt-get update
 apt-get -qy install git emacs23-nox
-git clone https://github.com/openstack-dev/devstack
+
 cd devstack
 genlocalrc
 
